@@ -10,7 +10,7 @@ global.jQuery = $;
 const Dashboard = React.lazy(() => import("./Demo/dashboard/dashboard"));
 
 //Not Found
-// const NotFound = React.lazy(() => import("./Demo/NotFound/NotFound"));
+const NotFound = React.lazy(() => import("./Demo/NotFound/NotFound"));
 
 const routes = [
     //users routes
