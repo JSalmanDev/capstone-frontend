@@ -22,7 +22,7 @@ class SignUp1 extends React.Component {
               value: false,
               text: ''   
           },
-          isLoading: true
+          isLoading: false
         }
       }
 
