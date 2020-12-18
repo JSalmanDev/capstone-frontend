@@ -8,6 +8,7 @@ global.jQuery = $;
 
 //Users
 const Dashboard = React.lazy(() => import("./Demo/dashboard/dashboard"));
+const Project = React.lazy(() => import("./Demo/Questions/Questions"));
 
 //Not Found
 const NotFound = React.lazy(() => import("./Demo/NotFound/NotFound"));
@@ -15,6 +16,7 @@ const NotFound = React.lazy(() => import("./Demo/NotFound/NotFound"));
 const routes = [
     //users routes
     { path: '/dashboard', exact: true, role:'user', user: true, component: RequireAuth(Dashboard) },
+    { path: '/project', exact: true, role:'user', user: true, component: RequireAuth(Project) },
     { path: '/not-found', exact: true, role:'public', component: RequireAuth(NotFound) }
 ];
 
