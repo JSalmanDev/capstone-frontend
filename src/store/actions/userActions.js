@@ -2,6 +2,7 @@ import {
     SIGN_IN,
     SIGN_OUT,
     SIDE_NAVIGATION,
+    SIDE_NAVIGATION_Refresh,
     SET_ROUTE
 } from './types/types';
 
@@ -26,6 +27,11 @@ export const sideNavigation = data => {
     };
 };
 
+export const sideNavigationOnRefresh = () => {
+    return {
+            type: SIDE_NAVIGATION_Refresh
+        };
+};
 
 export const signOut = () => {
     return {

@@ -22,6 +22,7 @@ export default function (ComposedComponent) {
           .then(async ({ data }) => {
             await this.props.setRoute(true);
             await this.props.signIn(data.data);
+            await this.props.sideNavigationOnRefresh();
             if (this.props.location.pathname === '/not-found' || !routes.some(x => x.path === this.props.location.pathname && x.role === data.data.role)) {
               history.push({pathname: '/not-found', state: { link: '/dashboard' } });
             }
