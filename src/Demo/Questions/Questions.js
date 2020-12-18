@@ -210,7 +210,7 @@ class Questions extends React.Component {
                                                                             <Row>
                                                                                 <Col>{moment(elem.created_at).format('DD/MM/YYYY hh:mm A')}</Col>
                                                                                 <Col><p><b>By: {elem.user.email}</b></p></Col>
-                                                                                <Col><p>2: Answers</p></Col>
+                                                                                <Col><p>{elem.answers.length}: Answers</p></Col>
                                                                             </Row>
                                                                             <Row>
                                                                                 <Col>
